@@ -1,9 +1,12 @@
 {
   "name": "customer-records",
   "version": "1.0.0",
-  "description": "",
+  "main": "build/index.js",
+  "bin": "build/index.js",
   "scripts": {
-    "start": "ts-node index.ts",
+    "prepublish": "tsc",
+    "start": "node build/index.js",
+    "dev": "ts-node lib/index.ts",
     "test": "jest"
   },
   "repository": {
@@ -44,7 +47,7 @@
     "transform": {
       "^.+\\.tsx?$": "ts-jest"
     },
-    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.ts$",
     "moduleFileExtensions": [
       "ts",
       "tsx",

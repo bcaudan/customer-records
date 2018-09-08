@@ -1,5 +1,7 @@
 import readCustomersFromFile from "./src/input/readCustomersFromFile";
 import filterWithinDistanceOf from "./src/distance/filterWithinDistanceOf";
+import display from "./src/output/display";
+import Customer from "./src/model/Customer";
 
 const customersFile = process.argv[2];
 const maxDistance = 100;
@@ -9,14 +11,11 @@ const dublin = {
 };
 
 readCustomersFromFile(customersFile)
-  .then(customers => {
-    const eligibleCustomers = filterWithinDistanceOf(
-      customers,
-      maxDistance,
-      dublin
-    );
-    console.log(eligibleCustomers.length);
-  })
+  .then(
+    customers =>
+      <Customer[]>filterWithinDistanceOf(customers, maxDistance, dublin)
+  )
+  .then(eligibleCustomers => display(eligibleCustomers))
   .catch(error => {
     console.error("Error:", error);
     process.exit(1);

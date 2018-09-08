@@ -1,0 +1,19 @@
+{
+  "title": "Customer",
+  "type": "object",
+  "properties": {
+    "latitude": {
+      "type": "string"
+    },
+    "longitude": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "user_id": {
+      "type": "number"
+    }
+  },
+  "required": ["latitude", "longitude", "name", "user_id"]
+}

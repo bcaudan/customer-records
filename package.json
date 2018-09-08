@@ -2,9 +2,8 @@
   "name": "customer-records",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "ts-node index.ts"
   },
   "repository": {
     "type": "git",
@@ -15,5 +14,9 @@
   "bugs": {
     "url": "https://github.com/bcaudan/customer-records/issues"
   },
-  "homepage": "https://github.com/bcaudan/customer-records#readme"
+  "homepage": "https://github.com/bcaudan/customer-records#readme",
+  "dependencies": {
+    "ts-node": "7.0.1",
+    "typescript": "3.0.3"
+  }
 }

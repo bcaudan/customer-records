@@ -1,0 +1,19 @@
+{
+  "name": "customer-records",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bcaudan/customer-records.git"
+  },
+  "author": "Bastien Caudan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bcaudan/customer-records/issues"
+  },
+  "homepage": "https://github.com/bcaudan/customer-records#readme"
+}

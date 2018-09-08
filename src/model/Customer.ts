@@ -1,8 +1,8 @@
+import Coordinates from "./Coordinates";
+
 type Customer = {
   user_id: number;
   name: string;
-  latitude: number;
-  longitude: number;
-};
+} & Coordinates;
 
 export default Customer;

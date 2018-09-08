@@ -5,7 +5,7 @@ import { Validator } from "jsonschema";
 import Customer from "../model/Customer";
 import CustomerInput from "./CustomerInput";
 
-const customerSchema = require("./customerSchema.json");
+const customerSchema = require("../../../resources/customerSchema.json");
 
 export default function(filePath: string): Promise<Customer[]> {
   const jsonValidator = new Validator();

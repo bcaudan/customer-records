@@ -7,14 +7,17 @@
 
 ## Getting started
 
-Install
+Install:
 
     npm install
     
-Run
+Run with a customers file path:
 
-    npm start customers.txt
+    $ npm start customers.txt
+    {"user_id":4,"name":"Ian Kehoe"}
+    {"user_id":5,"name":"Nora Dempsey"}
+    ...
     
-Test
+Test:
 
     npm test    
